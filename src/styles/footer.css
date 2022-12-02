@@ -1,0 +1,14 @@
+.footer {
+    min-height: 250px;
+    background-color: var(--darkviolet);
+}
+.footer h3 {
+    color: #fff;
+    font-size: 31.98px;
+    font-weight: 600;
+    padding-left: 36%;
+    padding-top: 36px;
+}
+
+
+

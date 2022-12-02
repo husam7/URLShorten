@@ -1,0 +1,23 @@
+.ResourcesCover {
+    background-color: var(--primarydark);
+    background-image: url('../assets/bg-boost-desktop.svg');
+    object-fit:  cover;
+    width: 100%;
+    min-height: 210px;
+    align-items: center;
+     margin-top: -20px; 
+} 
+.ResourcesCover h2 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 16px;
+    font-weight: 600;
+} 
+.ResourcesCover button{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    padding: 16px 36px;
+    font-size: 18px;
+} 

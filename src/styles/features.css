@@ -1,0 +1,85 @@
+ .Features {
+ }
+ .featureButton {
+    border-radius: 4px;
+    padding: 16px 32px;
+    }
+ .CardIcon {
+    position: relative;
+    min-height: 50px;
+    background: linear-gradient(180deg, #eff1f7 50%, #ffffff 50%);
+    padding-left: 24px;
+    border-radius: 8px;
+ }
+ .CardIcon img{
+    height: 64px;
+    width: 64px;
+    object-fit:  contain;
+    display: inline-block;
+    border-radius: 60px;
+    background-color:var(--primarydark);
+    padding: 12px; 
+ }
+ .IconContainer {
+    position: relative;
+    min-height: 50px;
+    background: linear-gradient(180deg, #eff1f7 50%, #ffffff 50%);
+    border-radius: 8px;
+ }
+ #Customized {
+    padding-top: 48px;
+ }
+ .bgg {
+    background-color:#eff1f7;
+ }
+ .Title {
+    background-color:#ffffff;
+ }
+ .CardWrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+  .Card {
+    width: 350px;
+    height: 300px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 4rem;
+    
+    position: relative;
+  }
+  .Card:first-child::before,
+  .Card:last-child::after,
+  .Card:first-child .CardInner::before,
+  .Card:last-child .CardInner::after {
+      display: none;
+  }
+  .CardInner {
+      width: 100%;
+      height: 100%;
+  }
+  .CardInner::after {
+      position: absolute;
+      right: -65px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #000;
+      content: "";
+      width: 65px;
+      height: 4px;
+  }
+  .CardInner::before {
+      position: absolute;
+      left: -65px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #000;
+      content: "";
+      width: 65px;
+      height: 4px;
+  }

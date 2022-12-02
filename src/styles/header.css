@@ -1,0 +1,111 @@
+
+.NavMenu {
+    overflow: hidden;
+    margin-bottom: 32px;
+    background-color:rgb(255, 255, 255)
+  }
+  .NavMenu a {
+    float:left;
+    display: block;
+    color: var(--grayish);
+    text-align: center;
+    font-weight: 700;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 8px;
+  }
+  .SBtn{
+    float: right;
+  }
+  .NavMenu span a{
+    float: right;
+    color: var(--grayish);
+    font-weight: 700;
+    padding-top: 8px;
+  }
+  .NavMenu span button{
+    float: right;
+    padding: 8px 24px;
+  }
+
+  .NavMenu a:hover {
+    color: var(--darkviolet)
+  }
+  
+  .NavMenu a.active {
+    color: var(--darkviolet)
+  }
+ .NavMenu .Svg {
+  padding-top: 8px;
+ }
+  .NavMenu .Icon {
+    display: none;
+  }
+ 
+  @media screen and (min-width: 700px) {
+    .NavMenu {
+      margin: 24px 8%;
+    }
+  }
+    @media screen and (max-width: 701) {
+      .NavMenu {
+        margin: 24px 24px 0px 24px;
+      }
+    .NavMenu a {
+      display: none;
+      /* padding-bottom: 16px;  */
+    }
+    .NavMenu span a{
+      display: none;
+
+    }
+    .NavMenu span button{
+      display: none;
+
+    }
+      /* */
+    .NavMenu a.Icon {
+      float: right;
+      display: block;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+  
+  /* Mobile: 375px; Desktop: 1440px; */
+  @media screen and (max-width: 700px) {
+    .NavMenu.responsive {
+      position:relative;
+      border-radius: 8px;
+      background-color: var(--primarydark);
+      text-align: center;
+    }
+    .Ic {
+      position: absolute;
+      font-size: 32px;
+    }
+    .Btn{
+      display:block;
+      text-align: center;
+    }
+    .NavMenu.responsive a {
+      float: none;
+      display: block;
+      padding-bottom: 16px; 
+      padding-top: 16px;
+    }
+    .Button{
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .NavMenu.responsive a:first-child {
+      padding-top: 16px;
+    }
+    .NavMenu.responsive a:last-child {
+      padding-bottom: 16px;;
+    }
+  }
+  @media (max-width:375px){
+    .AppContainer {
+        margin: 24px 24px 0px 24px;
+      }
+  }

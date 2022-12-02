@@ -1,0 +1,15 @@
+.HeroCol h1{
+    padding-top: 32px;
+    font-size: 75.76px;
+    font-weight: 700;
+    color: var(--darkviolet)
+  }
+  .HeroCol p{
+    font-size: 23.99px;
+    font-weight: 500;
+    padding-bottom: 32px;
+  }
+  .Hero img{
+    object-fit:  cover;
+    width: 650px;
+  }

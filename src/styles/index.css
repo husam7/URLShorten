@@ -1,0 +1,30 @@
+/* color: hsl(0,0%,75%); */
+:root {
+  --primary: hsl(180, 66%, 49%);
+  --primarydark: hsl(257, 27%, 26%);
+  --secondary: hsl(0, 87%, 67%);
+  --gray: hsl(0, 0%, 75%);
+  --grayish: hsl(257, 7%, 63%);
+  --darkblue: hsl(255, 11%, 22%);
+  --darkviolet: hsl(260, 8%, 14%);
+  --minWidth: 700px;
+} 
+body {
+  overflow-x: hidden; 
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: var(--grayish);
+}
+button{
+  background-color: var(--primary);
+  border-width: 0px;
+  border-radius: 50px;
+  padding: 16px 32px;
+  color: hsl(180, 24%, 96%);
+}
+
+button:hover{
+ background-color: hsl(180, 66%, 64%);
+ 
+}

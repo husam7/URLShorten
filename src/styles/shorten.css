@@ -1,0 +1,58 @@
+#Shorten {
+    position: relative;
+    min-height: 150px;
+    background: linear-gradient(180deg, #ffffff 50%, #eff1f7 50%);
+}
+#ShortenContainer {
+    background-color: var(--primarydark);
+    background-image: url('../assets/bg-shorten-desktop.svg');
+    object-fit:  cover;
+    margin: 56px 8%;
+    min-height: 160px;
+}
+#ShortenGrid {
+    padding-left: 50px ;
+    padding-top: 55px;
+}
+#ShortenButtonContainer {
+    float: right;
+    padding-right: 50px;
+}
+.LinkButton {
+    border-radius: 4px;
+    padding: 8px 24px;
+    font-size: 13.5px;
+    float: right;
+}
+.ShortenButton {
+border-radius: 8px;
+padding: 16px 32px;
+font-size: 18px;
+}
+.ShortenLabel input {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    padding-left: 24px;
+}
+#textField {
+    color: brown;
+}
+.ShortenUrlLabel {
+    display: block;
+    font-size: 18px;
+    color: var(--secondary);
+}
+.ShortenUrlLabel.hide {
+    display: none;
+}
+#SavedUlr {
+    padding: 0px 8%;
+    margin-top: -32px;
+}
+.Item {
+    background-color:#ffffff;
+    border-radius:8px;
+    padding: 16px;
+    margin:16px 0px;
+}
