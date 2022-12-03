@@ -1,8 +1,7 @@
 
 .NavMenu {
-    overflow: hidden;
     margin-bottom: 32px;
-    background-color:rgb(255, 255, 255)
+    justify-content: center;
   }
   .NavMenu a {
     float:left;
@@ -10,102 +9,88 @@
     color: var(--grayish);
     text-align: center;
     font-weight: 700;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 8px;
+    margin-top: 24px;
   }
   .SBtn{
     float: right;
   }
-  .NavMenu span a{
+  .SBtn a{
     float: right;
     color: var(--grayish);
     font-weight: 700;
-    padding-top: 8px;
+    margin-top: 40px;
+    margin-right: 16px;
   }
-  .NavMenu span button{
+  .SBtn button{
     float: right;
     padding: 8px 24px;
+    margin-top: 32px;
+    margin-left: 16px;
   }
-
   .NavMenu a:hover {
-    color: var(--darkviolet)
+    color: var(--darkviolet);
+    text-decoration:none;
   }
-  
   .NavMenu a.active {
-    color: var(--darkviolet)
+    color: var(--darkviolet);
+    text-decoration:none;
   }
- .NavMenu .Svg {
-  padding-top: 8px;
- }
+  .NavMenu .Svg {
+    padding-top: 36px;
+   }
   .NavMenu .Icon {
     display: none;
   }
- 
-  @media screen and (min-width: 700px) {
-    .NavMenu {
-      margin: 24px 8%;
-    }
-  }
-    @media screen and (max-width: 701) {
-      .NavMenu {
-        margin: 24px 24px 0px 24px;
-      }
+    @media screen and (max-width: 700px) {
+
     .NavMenu a {
       display: none;
-      /* padding-bottom: 16px;  */
     }
-    .NavMenu span a{
+    .NavMenu button{
       display: none;
-
     }
-    .NavMenu span button{
+    .SBtn button{
       display: none;
-
-    }
-      /* */
+    }  
     .NavMenu a.Icon {
       float: right;
       display: block;
       background-color: rgb(255, 255, 255);
+      margin-right: 32px;
     }
   }
-  
-  /* Mobile: 375px; Desktop: 1440px; */
   @media screen and (max-width: 700px) {
+          .NavMenu {
+        margin: 24px 24px 0px 24px;
+      }
+    .NavMenu.responsive button{
+      display: block;
+      margin: auto 0% auto 33%;
+    }
     .NavMenu.responsive {
       position:relative;
       border-radius: 8px;
       background-color: var(--primarydark);
       text-align: center;
     }
-    .Ic {
+    .ToggleIcon {
       position: absolute;
       font-size: 32px;
-    }
-    .Btn{
-      display:block;
-      text-align: center;
+      margin-top: -24px;
     }
     .NavMenu.responsive a {
       float: none;
       display: block;
+      background-color: var(--primarydark);
+      color:#fff;
       padding-bottom: 16px; 
       padding-top: 16px;
     }
-    .Button{
-      margin-top: 8px;
-      margin-bottom: 8px;
-    }
     .NavMenu.responsive a:first-child {
-      padding-top: 16px;
+      padding-top: 32px;
     }
     .NavMenu.responsive a:last-child {
-      padding-bottom: 16px;;
+      padding-bottom: 32px;;
     }
   }
-  @media (max-width:375px){
-    .AppContainer {
-        margin: 24px 24px 0px 24px;
-      }
-  }
+

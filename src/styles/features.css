@@ -1,85 +1,193 @@
- .Features {
- }
- .featureButton {
-    border-radius: 4px;
-    padding: 16px 32px;
-    }
- .CardIcon {
-    position: relative;
-    min-height: 50px;
-    background: linear-gradient(180deg, #eff1f7 50%, #ffffff 50%);
-    padding-left: 24px;
-    border-radius: 8px;
- }
- .CardIcon img{
-    height: 64px;
-    width: 64px;
-    object-fit:  contain;
-    display: inline-block;
-    border-radius: 60px;
-    background-color:var(--primarydark);
-    padding: 12px; 
- }
- .IconContainer {
-    position: relative;
-    min-height: 50px;
-    background: linear-gradient(180deg, #eff1f7 50%, #ffffff 50%);
-    border-radius: 8px;
- }
- #Customized {
-    padding-top: 48px;
- }
- .bgg {
-    background-color:#eff1f7;
- }
- .Title {
-    background-color:#ffffff;
- }
+/* On screens that are 1440px less or more but not less than 700*/
  .CardWrapper {
-    display: flex;
+   display: inline-flex;
     align-items: center;
     align-content: center;
     flex-direction: row;
-  }
-  .Card {
-    width: 350px;
-    height: 300px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+ }
+
+ .CardBody {
+   padding: 25px;
+}
+.CardBody p{
+   font-size: 13.5px;
+}
+ .featureButton {
+    border-radius: 4px;
+    padding: 16px 32px;
+ }
+
+ .CardIcon {
+    position: relative;
+    min-height: 50px;
+    padding-left: 24px;
+    border-radius: 8px;
+ }
+
+ .CardIcon img {
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+    display: inline-block;
+    border-radius: 60px;
+    background-color: var(--primarydark);
+    padding: 12px;
+ }
+
+ .IconContainer {
+    position: relative;
+    min-height: 50px;
+    margin-top: -30px;
+ }
+
+ .Title {
+    color: black;
+    font-weight: bolder;
+    margin: 5px;
+    margin-bottom: 15px;
+ }
+
+ .Card {
     background-color: #ffffff;
-    display: flex;
+    display: flow-root;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 2rem 4rem;
-    
     position: relative;
-  }
-  .Card:first-child::before,
-  .Card:last-child::after,
-  .Card:first-child .CardInner::before,
-  .Card:last-child .CardInner::after {
-      display: none;
-  }
-  .CardInner {
-      width: 100%;
-      height: 100%;
-  }
-  .CardInner::after {
+ }
+ .Card:nth-child(1) {
+   margin-right: 25px;
+
+
+}
+ .Card:nth-child(2) {
+    margin-top: 50px;
+    margin-right: 25px;
+
+ }
+
+ .Card:nth-child(3) {
+    margin-top: 100px;
+ }
+
+ .Card:last-child::after,
+ .Card:first-child .CardInner::before,
+ .Card:last-child .CardInner::after {
+    display: none;
+ }
+
+ .CardInner {
+    width: 100%;
+    height: 100%;
+ }
+ .CardInner::before {
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--primary);
+    content: "";
+    width: 25px;
+    height: 8px;
+ }
+/* On screens that are 700px or less to 375*/
+@media screen and (max-width: 700px) {
+   .Features{
+      padding-bottom: 48px;
+      padding-top: 24px;
+      text-align: center;
+   }
+
+   .CardBody p{
+      text-align: center;
+   }
+   .Title {
+      text-align: center;
+
+   }
+ .CardWrapper {
+   display: table-row-group;
+   align-items: center;
+   align-content: center;
+   flex-direction: row;
+   margin-top: 100px;
+   margin-bottom: 50px;
+}
+   .CardInner::before {
       position: absolute;
-      right: -65px;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: #000;
+      top:  -100px;
+      transform: translateX(50%);
+      background-color: var(--primary);
       content: "";
-      width: 65px;
-      height: 4px;
+      width: 8px;
+      height: 70px;
+      left: 50%;   
+   }
+   .IconContainer {
+      min-height: 50px;
+      margin-top: -30px;
+      text-align: center;
+   }
+   .CardIcon {
+      padding-left: 15px;
   }
-  .CardInner::before {
+   .Card:nth-child(2) {
+      margin-top: 100px;
+   }
+  
+   .Card:nth-child(3) {
+      margin-top: 100px;
+   }
+}
+/* On screens that are 375px or less */
+
+@media screen and (max-width: 375px) {
+   .Features{
+      padding-bottom: 48px;
+      padding-top: 24px;
+      text-align: center;
+   }
+
+   .CardBody p{
+      text-align: center;
+   }
+   .Title {
+      text-align: center;
+
+   }
+ .CardWrapper {
+   display: table-row-group;
+   align-items: center;
+   align-content: center;
+   flex-direction: row;
+   margin-top: 100px;
+   margin-bottom: 50px;
+}
+   .CardInner::before {
       position: absolute;
-      left: -65px;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: #000;
+      top:  -100px;
+      transform: translateX(50%);
+      background-color: var(--primary);
       content: "";
-      width: 65px;
-      height: 4px;
+      width: 8px;
+      height: 70px;
+      left: 50%;   
+   }
+   .IconContainer {
+      min-height: 50px;
+      margin-top: -30px;
+      text-align: center;
+   }
+   .CardIcon {
+      padding-left: 15px;
   }
+   .Card:nth-child(2) {
+      margin-top: 100px;
+   }
+  
+   .Card:nth-child(3) {
+      margin-top: 100px;
+   }
+}

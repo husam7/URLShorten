@@ -1,17 +1,19 @@
 .App {
     background-color:#eff1f7
 }
+/* On screens that are 375px or less */
 @media (max-width:375px){
     .AppContainer {
         margin: 24px 24px 0px 24px;
       }
   }
-  @media (max-width: 700px){
+/* On screens that are 700px more or less but more than 375*/
+   @media (max-width: 700px){
     .AppContainer {
       margin: 24px 24px 0px 24px;
     }
-  }
-  @media (min-width: 701px){
+  } 
+  @media (min-width: 700px){
     .AppContainer {
       margin: 48px 8% 0px 8%;
   

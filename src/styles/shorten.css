@@ -24,6 +24,9 @@
     font-size: 13.5px;
     float: right;
 }
+.ShortUrl {
+float:right;
+}
 .ShortenButton {
 border-radius: 8px;
 padding: 16px 32px;
@@ -55,4 +58,63 @@ font-size: 18px;
     border-radius:8px;
     padding: 16px;
     margin:16px 0px;
+}
+.Copied {
+    background-color: var(--primarydark);
+    border-radius: 4px;
+    padding: 8px 18px;
+    font-size: 13.5px;
+    float: right;
+}
+.Copied:hover {
+    background-color: var(--primarydark);
+}
+@media screen and (max-width: 700px) {
+    #ShortenButtonContainer {
+        float: right;
+        padding-right: 50px;
+        width: 100%;
+    }
+    .ShortenButton {
+       margin-bottom: 16px;
+       margin-top: 16px;
+       width: 300px;
+        }
+        .ShortenUrlLabel {
+            width: 100%;
+        }
+        #textField {
+            /* margin-left: -24px; */
+            width: 300px;
+        }
+        .Item {
+            margin:16px 16px;
+        }
+        .UrlCol {
+            /* border-style: solid;
+            border-color: var(--secondary); */
+            border-bottom: 1px solid var(--secondary);
+            margin: 8px;
+            text-align: center;
+        }
+        .ShortUrlCol {
+            margin: 8px;
+            width: 100%;
+            display: grid;
+            text-align: center;
+        }
+        .ShortUrlCol a{
+            text-align: center;
+
+        }
+        .LinkButtonCol{
+            width: 100%;
+            /* padding-right: 36px; */
+        }
+        .LinkButton {
+            width: 100%;
+        }
+        .Copied {
+            width: 100%;
+        }
 }
