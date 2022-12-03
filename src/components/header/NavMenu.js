@@ -14,7 +14,6 @@ function NavMenu() {
         } else { 
           itemList.className = "NavMenu";
           var Buttons =  document.getElementById("SignUp");
-          
           Buttons.appendChild(a);
           Buttons.appendChild(btn);
         }
@@ -40,10 +39,8 @@ function NavMenu() {
       <div className="SBtn" id="SignUp">
       <button id="Btn" className='Button'>SignUp</button>
       <a id="Alogin" href="#">Login</a>
- 
       </div> 
       </Col>
- 
     </Row>
   </Container>
 

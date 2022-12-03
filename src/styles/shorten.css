@@ -84,15 +84,12 @@ font-size: 18px;
             width: 100%;
         }
         #textField {
-            /* margin-left: -24px; */
             width: 300px;
         }
         .Item {
             margin:16px 16px;
         }
         .UrlCol {
-            /* border-style: solid;
-            border-color: var(--secondary); */
             border-bottom: 1px solid var(--secondary);
             margin: 8px;
             text-align: center;
@@ -109,7 +106,6 @@ font-size: 18px;
         }
         .LinkButtonCol{
             width: 100%;
-            /* padding-right: 36px; */
         }
         .LinkButton {
             width: 100%;

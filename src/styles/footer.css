@@ -18,14 +18,12 @@
     place-content: center;
     display: flex!important;
 }
-
 .ms-3 {
     margin-left: 3rem!important;
 }
 .nav a:hover{
     color:var(--primary);
     background-color:var(--darkviolet);
-
 }
      .nav li a{
         background-color:var(--darkviolet);

@@ -1,4 +1,3 @@
-/* color: hsl(0,0%,75%); */
 :root {
   --primary: hsl(180, 66%, 49%);
   --primarydark: hsl(257, 27%, 26%);
@@ -23,8 +22,6 @@ button{
   padding: 16px 32px;
   color: hsl(180, 24%, 96%);
 }
-
 button:hover{
  background-color: hsl(180, 66%, 64%);
- 
 }

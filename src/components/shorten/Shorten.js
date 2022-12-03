@@ -93,8 +93,7 @@ const Shorten = () => {
     col.appendChild(button)
     button.className="Copied"
     const ButtonText = document.createTextNode("Copied");
-    button.appendChild(ButtonText)
-    
+    button.appendChild(ButtonText) 
   }
   const fillLocalStorageElements = () => {
     
@@ -172,5 +171,4 @@ const Shorten = () => {
         </div>
     );
   }
-// }
 export default Shorten;

@@ -18,9 +18,7 @@ function Footer() {
               </h3>
             </div>
           </Col>
-
           <Col sm={3} md={2} lg={2} xl={2}>
-
             <h4>
               Features
             </h4>
@@ -30,9 +28,7 @@ function Footer() {
               <li><a href="#">Analytics</a></li>
             </ul>
           </Col>
-
           <Col sm={3} md={2} lg={2} xl={2}>
-
             <h4>
               Resources
             </h4>
@@ -43,7 +39,6 @@ function Footer() {
             </ul>
           </Col>
           <Col sm={3} md={2} lg={2} xl={2}>
-
             <h4>
               Company
             </h4>
@@ -57,7 +52,6 @@ function Footer() {
           <Col sm={3} md={2} lg={2} xl={2}>
           <h4>
             </h4>
-
             <ul className="list-unstyled d-flex">
               <li className="ms-3"><a className="link-dark" href="#"><img src={iconFacebook} className="bi" width="24" height="24"></img></a></li>
               <li className="ms-3"><a className="link-dark" href="#"><img src={iconTwitter} className="bi" width="24" height="24"></img></a></li>
@@ -65,10 +59,8 @@ function Footer() {
               <li className="ms-3"><a className="link-dark" href="#"><img src={iconInstagram} className="bi" width="24" height="24"></img></a></li>
             </ul>
           </Col>
-
         </Row>
       </div>
-
     </footer>
   );
 }
