@@ -16,6 +16,8 @@ const Shorten = () => {
       if(text.length >0 && itemList.className !== "ShortenUrlLabel hide") {
         let itemList = document.getElementById("ShortenUrlLabelId");
         itemList.className = "ShortenUrlLabel hide";
+        let textField = document.getElementById("textField");
+        textField.className = 'TextField';
     }
   };
   function checkUrl(){
@@ -26,6 +28,8 @@ const Shorten = () => {
     }
     else {
       let itemList = document.getElementById("ShortenUrlLabelId");
+      let textField = document.getElementById("textField");
+      textField.className += ' Validate';
       itemList.className = "ShortenUrlLabel";
       return Promise.reject(false);
     }
@@ -106,7 +110,7 @@ const Shorten = () => {
         let Row = document.createElement('div')
         let Col1 = document.createElement('div')
         let Col3 = document.createElement('div')
-        let Col2 = document.createElement('div')       
+        let Col2 = document.createElement('div')
         let span = document.createElement('span')
         let a = document.createElement('a')
         let button = document.createElement('button')
@@ -148,7 +152,7 @@ const Shorten = () => {
           <Row>
             <Col xs={12} sm={7} md={8} lg={9} xl={9} xxl={9}>
               <div className="ShortenLabel">
-            <input id="textField" className='' name="textField" value={textField} type="text"onChange={handleChange}  placeholder="Shorten a link here..." />
+            <input id="textField" className="InputField" name="textField" value={textField} type="text"onChange={handleChange}  placeholder="Shorten a link here..." />
             <label 
             className="ShortenUrlLabel hide"
             id='ShortenUrlLabelId'>
