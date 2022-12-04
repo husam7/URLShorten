@@ -4,13 +4,13 @@
     background-color: var(--darkviolet);
 }
 .footer h3 {
-    color: #fff;
+    color: var(--white);
     font-size: 31.98px;
     font-weight: 600;
     padding-top: 36px;
 }
 .footer h4 {
-    color: #fff;
+    color: var(--white);
     font-weight: 600;
     padding-top: 36px;
 }
@@ -27,7 +27,7 @@
 }
      .nav li a{
         background-color:var(--darkviolet);
-        color:#fff;
+        color:var(--white);
         font-size: 13.5px;
     } 
     .nav li a:hover{

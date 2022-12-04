@@ -38,13 +38,13 @@
     margin-top: -30px;
  }
  .Title {
-    color: black;
+    color: var(--primarydark);
     font-weight: bolder;
     margin: 5px;
     margin-bottom: 15px;
  }
  .Card {
-    background-color: #ffffff;
+    background-color: var(--white);
     display: flow-root;
     flex-direction: row;
     align-items: center;

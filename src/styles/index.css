@@ -7,6 +7,7 @@
   --darkblue: hsl(255, 11%, 22%);
   --darkviolet: hsl(260, 8%, 14%);
   --minWidth: 700px;
+  --white: var(--white);
 } 
 body {
   overflow-x: hidden; 

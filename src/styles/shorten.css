@@ -1,7 +1,7 @@
 #Shorten {
     position: relative;
     min-height: 150px;
-    background: linear-gradient(180deg, #ffffff 50%, #eff1f7 50%);
+    background: linear-gradient(180deg, var(--white) 50%, #eff1f7 50%);
 }
 #ShortenContainer {
     background-color: var(--primarydark);
@@ -39,7 +39,7 @@ font-size: 18px;
     padding-left: 24px;
 }
 #textField {
-    color: brown;
+    color: var(--primarydark);
 }
 .ShortenUrlLabel {
     display: block;
@@ -54,7 +54,7 @@ font-size: 18px;
     margin-top: -32px;
 }
 .Item {
-    background-color:#ffffff;
+    background-color:var(--white);
     border-radius:8px;
     padding: 16px;
     margin:16px 0px;
